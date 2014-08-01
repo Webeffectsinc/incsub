@@ -1,0 +1,61 @@
+// This is the header style.
+// Let's add here all the style related to logo, search and navigation
+
+.main-header-wrapper {
+	border-bottom: 1px solid #72aebd;
+	padding-bottom: 27px;
+	.main-header {
+		position: relative;
+		.search-box {
+			position: absolute;
+			top: 0;
+			right: 0;
+			input {
+				padding: 0 35px 0 12px;
+				text-transform: uppercase;
+				font-size: 12px;
+				&[type="submit"] {
+					position: absolute;
+					padding: 0;
+					top: 0;
+					right: 10px;
+					width: 27px;
+					height: 29px;
+					border-left: 2px solid #2b4656;
+					background: #313e44;
+					cursor: pointer;
+				}
+			}
+		}
+		.top-nav {
+			position: absolute;
+			right: 10px;
+			bottom: -10px;
+			li {
+				float: left;
+				padding: 0 10px 8px;
+				margin-right: 4px;
+				border-bottom: 2px solid transparent;
+				&:last-child {
+					padding-right: 0;
+					margin-right: 0;
+				}
+				a {
+					color: #a3a69f;
+					font-size: 13px;
+					text-transform: uppercase;
+					text-decoration: none;
+					&:hover {
+						color: #313e44;
+					}
+				}
+				&.active {
+					border-bottom: 2px solid #f8cf24;
+					a {
+						color: #313e44;
+					}
+				}
+			}
+		}
+	}
+}

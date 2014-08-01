@@ -1,0 +1,97 @@
+/* Global Layout ----------------------------- */
+// This file contains the layout style.
+/* ------------------------------------------ */
+
+// general style for boxes
+
+.yellow-box {
+	background: @yellow-box-bg;
+}
+
+.content {
+	padding-top: 27px;
+	.date {
+		line-height: 32px;
+		position: absolute;
+		padding: 0 5px;
+		top: -28px;
+		right: 10px;
+		font-size: 14px;
+		text-transform: uppercase;
+		color: #FFF;
+	}
+	.home-article {
+		height: 295px;
+		margin-bottom: 35px;
+		overflow: hidden;
+		figure {
+			position: relative;
+			height: 295px;
+			overflow: hidden;
+			.overlay {
+				background: #f8cf24;
+				position: absolute;
+				width: 100%;
+				right: -100%;
+				top: 0;
+				height: 100%;
+				.transition(right .2s ease-in);
+			}
+			&:hover {
+				.overlay {
+					right: 0;
+				}
+			}
+		}
+		a {
+			color: #8a8c87;
+			font-size: 14px;
+			text-decoration: none;
+			font-weight: 300;
+			position: relative;
+			z-index: 3;
+			display: block;
+			img {
+				margin-bottom: -3px;
+			}
+			figcaption {
+				padding-left: 10px;
+				padding-right: 15px;
+				padding-top: 12px;
+				position: relative;
+			}
+			h3 {
+				font-weight: 300;
+				text-transform: uppercase;
+				line-height: 24px;
+				font-size: 14px;
+				position: relative;
+				z-index: 2;
+			}
+			p {
+				margin: 0;
+				line-height: 24px;
+				position: relative;
+				z-index: 2;
+			}
+			&:hover {
+				font-family: "Oswald" sans-serif;
+				color: #FFF;
+				h3, p {
+					font-weight: 400;
+				}
+			}
+		}
+		.image {
+			position: relative;
+			.overlay {
+				position: absolute;
+				width: 100%;
+				background: rgba(127,181,186, .8);
+				height: 100%;
+				top: 0;
+				right: -100%;
+			}
+		}
+	}
+}
