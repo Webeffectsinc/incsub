@@ -1,0 +1,86 @@
+// Footer style
+footer {
+	position: relative;
+	margin-top: 67px;
+	.bottom-wrapper {
+		color: #bbbeb6;
+		font: 300 14px/50px "Lato", sans-serif;
+		.footer-text {
+			padding-left: 25px;
+		}
+		.footer-nav {
+			display: inline;
+			a {
+				font: 300 14px/14px "Lato", sans-serif;
+				text-decoration: none;
+				text-transform: capitalize;
+				padding-left: 13px;
+				color: #bbbeb6;
+			}
+		}
+	}
+	.follow-text {
+		padding-right: 35px;
+		padding-left: 15px;
+		height: 50px;
+		span {
+			float: left;
+			line-height: 50px;
+		}
+		a {
+			padding-left: 10px;
+			display: inline-block;
+			height: 20px;
+			margin-top: 15px;
+			img {
+				float: left;
+				.opacity(.6);
+			}
+			&:hover {
+				img {
+					.opacity(1);
+				}
+			}
+		}
+	}
+}
+.newsletter-wrapper {
+	background: #7fb5ba;
+	height: 240px;
+	padding-top: 48px;
+	.newsletter {
+		background: url(../img/updates.png) no-repeat top left;
+		margin: 0 auto;
+		width: 380px;
+		height: 121px;
+		padding-left: 151px;
+		padding-top: 56px;
+		padding-right: 14px;
+		position: relative;
+		h3 {
+			text-transform: uppercase;
+			font: 300 16px "Lato", sans-serif;
+			padding-left: 6px;
+			padding-bottom: 14px;
+			line-height: 16px;
+			color: #313e44;
+		}
+		input {
+			&[type="text"] {
+				background: #FFF;
+				padding-left: 15px;
+				padding-right: 62px;
+				outline: none;
+			}
+			&[type="submit"] {
+				background: #f3ce2a;
+				color: #FFF;
+				cursor: pointer;
+				width: 55px;
+				position: absolute;
+				bottom: 5px;
+				right: 14px;
+			}
+		}
+	}
+}

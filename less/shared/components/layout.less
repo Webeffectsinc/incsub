@@ -87,10 +87,37 @@
 			.overlay {
 				position: absolute;
 				width: 100%;
-				background: rgba(127,181,186, .8);
+				background: url(../img/plus-sign.png) rgba(127,181,186, .8) center no-repeat ;
 				height: 100%;
 				top: 0;
 				right: -100%;
+			}
+		}
+	}
+}
+
+.quote-wrapper {
+	margin-top: 32px;
+	.quote {
+		background: url(../img/quote-left.png) no-repeat top left;
+		padding: 0;
+		margin-top: 5px;
+		.quote {
+			&-name {
+				font: 400 25px "Dosis", sans-serif;
+				text-transform: uppercase;
+				background: url(../img/quote-right.png) no-repeat right 8px;
+				letter-spacing: -2px;
+				margin-top: -7px;
+				color: #313e44;
+			}
+			&-author {
+				color: #f3ce2a;
+				font: 300 18px "Dosis", sans-serif;
+				text-transform: uppercase;
+				letter-spacing: -1px;
+				display: block;
+				margin-top: 20px;
 			}
 		}
 	}
