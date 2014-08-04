@@ -35,8 +35,8 @@ owl: http://www.w3.org/2002/07/owl#" class="no-js no-touch">
 
 	<!-- <link href="less/main.less" rel="stylesheet/less" /> -->
 	<link href="css/main.css" rel="stylesheet" />
-	<!--[if lte IE 8]>
-	<link rel="stylesheet" href="less/ie_support.css">
+	<!--[if lt IE 9]>
+	<script src="js/html5shiv.min.js"></script>
 	<![endif]-->
 
 	<!-- Custom modernizr which has patches for ie7 -->
@@ -69,7 +69,29 @@ owl: http://www.w3.org/2002/07/owl#" class="no-js no-touch">
 				<nav role="navigation" class="top-nav pull-right">
 					<ul>
 						<li class="active"><a href="#">architecture</a></li>
-						<li><a href="#">art</a></li>
+						<li class="dropdown-menu"><a href="#">art</a>
+							<div class="dropdown">
+								<ul class="menu-level-1">
+									<li><a href="#">First line</a></li>
+									<li><a href="#">Second line</a></li>
+									<li><a href="#">Third line</a></li>
+									<li><a href="#">fourth line</a></li>
+									<li class="submenu"><a href="#">fifth line <span class="menu-arrow">&gt;</span></a>
+										<ul class="menu-level-2">
+											<li><a href="#">First line</a></li>
+											<li><a href="#">Second line</a></li>
+											<li><a href="#">Third line</a></li>
+											<li><a href="#">fourth line</a></li>
+											<li><a href="#">fifth line <span class="menu-arrow">&gt;</span></a></li>
+											<li><a href="#">sixth line</a></li>
+											<li><a href="#">seventh line</a></li>
+										</ul>
+									</li>
+									<li><a href="#">sixth line</a></li>
+									<li><a href="#">seventh line</a></li>
+								</ul>
+							</div>
+						</li>
 						<li><a href="#">interiors</a></li>
 						<li><a href="#">style</a></li>
 						<li><a href="#">gallery</a></li>
@@ -78,7 +100,7 @@ owl: http://www.w3.org/2002/07/owl#" class="no-js no-touch">
 			</div> <!-- /.col-20 -->
 		</div> <!-- /.container -->
 	</header>
-	<main class="container content">
+	<div class="container content" role="main">
 		<div class="col-20 col-left-2">
 			<h2>Featured articles</h2> <span class="date yellow-box">February 2014</span>
 			<div class="slider-wrapper row">
@@ -286,7 +308,7 @@ owl: http://www.w3.org/2002/07/owl#" class="no-js no-touch">
 				</article> <!-- /.quote -->
 			</section>
 		</div> <!-- /.col-20 -->
-	</main> <!-- /.container -->
+	</div> <!-- /.container -->
 	<footer>
 		<div class="newsletter-wrapper">
 			<div class="newsletter">

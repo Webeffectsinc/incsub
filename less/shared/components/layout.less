@@ -5,6 +5,7 @@
 // general style for boxes
 
 .yellow-box {
+	background: #f8cf24;
 	background: @yellow-box-bg;
 }
 
@@ -87,11 +88,13 @@
 			.overlay {
 				position: absolute;
 				width: 100%;
+				background: url(../img/plus-sign.png) #6f9da2 center no-repeat ;
 				background: url(../img/plus-sign.png) rgba(127,181,186, .8) center no-repeat ;
 				height: 100%;
 				top: 0;
 				right: -100%;
-			}
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=75)";
+    		filter: alpha(opacity=75);			}
 		}
 	}
 }
