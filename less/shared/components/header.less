@@ -36,9 +36,22 @@
 				margin-right: 4px;
 				border-bottom: 2px solid transparent;
 				position: relative;
+				&:after {
+					content: " ";
+					background: url(../img/menu-bg.png) no-repeat right center;
+					display: block;
+					position: absolute;
+					right: -2px;
+					top: 6px;
+					.square(4px);
+
+				}
 				&:last-child {
 					padding-right: 0;
 					margin-right: 0;
+					&:after {
+						display: none;
+					}
 				}
 				a {
 					color: #a3a69f;
@@ -98,6 +111,9 @@
 					&:hover {
 						height: 45px;
 						margin-bottom: -19px;
+						> a {
+							color: #313e44;
+						}
 						.menu-level {
 							&-1 {
 								top: 0;
